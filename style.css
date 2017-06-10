@@ -41,7 +41,7 @@ body{
 	padding: 0 30px 0 30px;
 }
 #Home p{
-	margin: 0 230px 210px 230px;
+	margin: 0 230px 250px 230px;
 	font-size: 35px;
 	font-family: STHeit;
 }
@@ -56,7 +56,13 @@ body{
 	background: rgba(0,0,0,0.1);
 	position: fixed;
 	top: 0px;
+	padding: 20px 0 20px 0;
 }
+#ScrollFixed img{
+	width: 20%;
+	margin: 0 20px 0 25px;
+}
+
 
 .StoryIntro .StoryTitle{
 	margin: 311px 0 0;
@@ -97,14 +103,14 @@ footer{
 }
 .FooterTitle img[alt="OrgsTitlePic"]{
 	width: 30%;
-	padding: 60px 0 60px 0;
+	padding: 60px 0 20px 0;
 }
 
 #Orgs .Org{
 	display: inline-block;
 	width: 200px;
 	height: 300px;
-	margin: 30px 50px 60px 50px;
+	margin: 30px 40px 60px 30px;
 }
 #Orgs .OrgPic{
 	width: 100%;
@@ -112,7 +118,7 @@ footer{
 }
 
 #Mores img[alt="MoresTitlePic"]{
-	margin: 30px 0 60px 0;
+	margin: 30px 0 30px 0;
 	width: 40%;
 }
 
@@ -120,7 +126,7 @@ footer{
 	display: inline-block;
 	width: 200px;
 	height: 300px;
-	margin: 0 20px 0 20px;
+	margin: 0 20px 0 40px;
 }
 #Mores .MorePic{
 	width: 100%;
@@ -129,7 +135,7 @@ footer{
 
 
 #Info{
-	margin:150px 0 0 0;
+	margin:150px 0 20px 0;
 	text-align: center;
 	align-items: center;
 }
