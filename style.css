@@ -1,0 +1,249 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	background-image: url("pics/bg.png");
+	background-size: 100%;
+	background-repeat: repeat;
+	background-position: left top;
+}
+.Container{
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	border:solid 1px;
+	text-align: center;
+	align-items: center;
+
+}
+
+#Home{
+	margin: 0;
+	padding: 0;
+}
+#Home img[alt="Title"], img[alt="Subtitle"],img[alt="Banner"]{
+	width: 100%;
+}
+#Home img[alt="Title"]{
+	margin: 145px 0 23px 0;
+	padding: 0 100px 0 100px; 
+}
+#Home img[alt="Subtitle"]{
+	margin: 0 0 12px 0;
+	padding: 0 100px 0 100px; 
+}
+#Home img[alt="Banner"]{
+	margin: 0 0 132px 0;
+	padding: 0 30px 0 30px;
+}
+#Home p{
+	margin: 0 230px 210px 230px;
+	font-size: 35px;
+	font-family: STHeit;
+}
+
+#Stories{
+	margin: 0;
+	padding: 0;
+}
+
+#ScrollFixed{
+	width: 100%;
+	background: rgba(0,0,0,0.1);
+	position: fixed;
+	top: 0px;
+}
+
+.StoryIntro .StoryTitle{
+	margin: 311px 0 0;
+}
+.StoryIntro .StoryPic{
+	width: 100%;
+	padding: 0 100px 0 100px;
+	margin: 40px 0 96px 0;
+}
+.StoryIntro .IntroWord{
+	padding: 0 100px 0 100px;
+	margin: 0 0 90px 0;
+	font-size: 35px;
+	font-family: STHeit;
+}
+
+.LawBad .LawBadTitle, .LawGood .LawGoodTitle{
+	margin: 311px 0 0;
+}
+.LawBad .LawBadPic, .LawGood .LawGoodPic{
+	width: 100%;
+	padding: 0 100px 0 100px;
+	margin: 40px 0 96px 0;
+}
+.LawBad .LawBadWord, .LawGood .LawGoodWord{
+	padding: 0 100px 0 100px;
+	margin: 0 0 100px 0;
+	font-size: 35px;
+	font-family: STHeit;
+}
+
+footer{
+	font-size: 35px;
+	font-family: STHeit;
+}
+.FooterTitle{
+	width: 100%;
+}
+.FooterTitle img[alt="OrgsTitlePic"]{
+	width: 30%;
+	padding: 60px 0 60px 0;
+}
+
+#Orgs .Org{
+	display: inline-block;
+	width: 200px;
+	height: 300px;
+	margin: 30px 50px 60px 50px;
+}
+#Orgs .OrgPic{
+	width: 100%;
+	margin-bottom: 30px; 
+}
+
+#Mores img[alt="MoresTitlePic"]{
+	margin: 30px 0 60px 0;
+	width: 40%;
+}
+
+#Mores .More{
+	display: inline-block;
+	width: 200px;
+	height: 300px;
+	margin: 0 20px 0 20px;
+}
+#Mores .MorePic{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+
+#Info{
+	margin:150px 0 0 0;
+	text-align: center;
+	align-items: center;
+}
+
+.Houses{
+	width: 100%;
+}
+
+
+
+/* header */
+
+.header {
+background: rgba(0,0,0,0);
+
+/*  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);*/
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 300px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
