@@ -29,12 +29,12 @@ body{
 	width: 100%;
 }
 #Home img[alt="Title"]{
-	margin: 145px 0 23px 0;
-	padding: 0 100px 0 100px; 
+	margin: 350px 0 23px 0;
+	padding: 0 100px 0 100px;
 }
 #Home img[alt="Subtitle"]{
 	margin: 0 0 12px 0;
-	padding: 0 100px 0 100px; 
+	padding: 0 100px 0 100px;
 }
 #Home img[alt="Banner"]{
 	margin: 0 0 132px 0;
@@ -55,7 +55,7 @@ body{
 	width: 100%;
 	background: rgba(0,0,0,0.1);
 	position: fixed;
-	top: 0px;
+	top: 113.5px;
 }
 
 .StoryIntro .StoryTitle{
@@ -108,7 +108,7 @@ footer{
 }
 #Orgs .OrgPic{
 	width: 100%;
-	margin-bottom: 30px; 
+	margin-bottom: 30px;
 }
 
 #Mores img[alt="MoresTitlePic"]{
@@ -143,7 +143,7 @@ footer{
 /* header */
 
 .header {
-background: rgba(0,0,0,0);
+background: rgba(0, 0, 0, 0.47);
 
 /*  background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);*/
@@ -157,19 +157,21 @@ background: rgba(0,0,0,0);
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .header li a {
   display: block;
-  padding: 20px 20px;
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  padding: 70px 70px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* menu */
@@ -177,7 +179,7 @@ background: rgba(0,0,0,0);
 .header .menu {
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out;
+  transition: max-height .3s ease-out;
 }
 
 /* menu icon */
@@ -186,7 +188,7 @@ background: rgba(0,0,0,0);
   cursor: pointer;
   display: inline-block;
   float: left;
-  padding: 28px 20px;
+  padding: 50px 50px;
   position: relative;
   user-select: none;
 }
@@ -194,10 +196,11 @@ background: rgba(0,0,0,0);
 .header .menu-icon .navicon {
   background: #333;
   display: block;
-  height: 2px;
+  height: 8px;
   position: relative;
   transition: background .2s ease-out;
-  width: 18px;
+  width: 72px;
+
 }
 
 .header .menu-icon .navicon:before,
@@ -212,21 +215,22 @@ background: rgba(0,0,0,0);
 }
 
 .header .menu-icon .navicon:before {
-  top: 5px;
+  top: 20px;
 }
 
 .header .menu-icon .navicon:after {
-  top: -5px;
+  top: -20px;
 }
 
 /* menu btn */
 
 .header .menu-btn {
   display: none;
+
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 300px;
+  max-height: 1820px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -245,5 +249,3 @@ background: rgba(0,0,0,0);
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
-
-
