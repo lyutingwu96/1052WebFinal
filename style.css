@@ -6,10 +6,10 @@
 
 body{
 	width: 100%;
-/*	background-image: url("pics/bg.png");
+	background-image: url("pics/背景.png");
 	background-size: 100%;
 	background-repeat: repeat;
-	background-position: left top;*/
+	background-position: left top;
 }
 .Container{
 	padding: 0;
@@ -29,7 +29,7 @@ body{
 	width: 100%;
 }
 #Home img[alt="Title"]{
-	margin: 350px 0 23px 0;
+	margin: 250px 0 23px 0;
 	padding: 0 100px 0 100px;
 }
 #Home img[alt="Subtitle"]{
@@ -41,7 +41,7 @@ body{
 	padding: 0 30px 0 30px;
 }
 #Home p{
-	margin: 0 230px 250px 230px;
+	margin: 0 230px 130px 230px;
 	font-size: 35px;
 	font-family: STHeit;
 }
@@ -52,7 +52,7 @@ body{
 }
 
 #ScrollFixed{
-  opacity: 0;
+  	opacity: 0;
 	width: 100%;
 	background: rgba(0,0,0,0.1);
 	position: fixed;
@@ -64,13 +64,13 @@ body{
 	margin: 0 20px 0 25px;
 }
 
-
 .StoryIntro .StoryTitle{
-	margin: 311px 0 0;
+	margin: 355px 0 0;
+	width: 60%;
 }
 .StoryIntro .StoryPic{
-	width: 100%;
-	padding: 0 100px 0 100px;
+	width: 70%;
+	padding: 0 20px 0 20px;
 	margin: 40px 0 96px 0;
 }
 .StoryIntro .IntroWord{
@@ -78,21 +78,38 @@ body{
 	margin: 0 0 90px 0;
 	font-size: 35px;
 	font-family: STHeit;
+	text-align: left;
 }
 
 .LawBad .LawBadTitle, .LawGood .LawGoodTitle{
-	margin: 311px 0 0;
+	margin: 250px 0 0 0;
+	width: 60%;
 }
 .LawBad .LawBadPic, .LawGood .LawGoodPic{
 	width: 100%;
 	padding: 0 100px 0 100px;
 	margin: 40px 0 96px 0;
 }
+.LawBadPicSmall, .LawGoodPicSmall{
+	display: inline-block;
+	width: 40%;
+	padding: 0 20px 0 20px;
+	margin: 40px 0 96px 0;
+}
+.lawSubTitle{
+	padding: 0 100px 0 100px;
+	font-size: 40px;
+	font-family: STHeit;
+	font-weight: 2em;
+	text-align: left;
+
+}
 .LawBad .LawBadWord, .LawGood .LawGoodWord{
 	padding: 0 100px 0 100px;
 	margin: 0 0 100px 0;
 	font-size: 35px;
-	font-family: STHeit;
+	font-family: STHeit;	text-align: left;
+
 }
 
 footer{
