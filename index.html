@@ -275,6 +275,17 @@
     </footer>
 
   </div>
+  <script src='./zingtouch/dist/zingtouch.min.js'></script>
+  <script>
+    var containerElement = document.getElementById('container');
+    var activeRegion = ZingTouch.Region(containerElement);
+    activeRegion.bind(containerElement, 'tap', function(event){
+	    //Perform Operations
+      //document.documentElement.scrollTop = document.body.scrollTop = 1740;
+      
+    });
+  </script>
+
   <script src="./Swiper/dist/js/swiper.min.js"></script>
   <script>
     var swiperH = new Swiper('.swiper-container-h', {
