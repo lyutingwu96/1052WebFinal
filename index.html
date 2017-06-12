@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" type="text/css" href="style">
+  <link rel="stylesheet" href="./Swiper/dist/css/swiper.min.css">
   <meta charset="utf-8">
 
   <title>家落何處—新住民配偶婚姻路遙遙</title>
@@ -18,15 +19,18 @@
 	<script type="text/javascript" src="./JSSM/js/examples.js"></script>
 
 	<script type="text/javascript" src="./JSSM/js/lib/velocity.min.js"></script>
+  <script type="text/javascript" src="./JSSM/js/lib/greensock/TweenMax.min.js"></script>
 	<script type="text/javascript" src="./JSSM/scrollmagic/uncompressed/ScrollMagic.js"></script>
 	<script type="text/javascript" src="./JSSM/scrollmagic/uncompressed/plugins/animation.velocity.js"></script>
-	<!--script type="text/javascript" src="./JSSM/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script-->
+  <script type="text/javascript" src="../../scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+	<script type="text/javascript" src="./JSSM/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
   <script type="text/javascript" src="./libgif/libgif.js"></script>
 
 </head>
 
 <body>
   <div class="Container">
+
 <!--     <div id="Fixed">
       <img src="./pics/漢堡-18.png" alt="Hamburger" width="100">
       <nav>
@@ -53,8 +57,8 @@
     </header>
 
 
-    <img src="./libgif/example_gifs/cat.gif" rel:animated_src="./libgif/example_gifs/rub_test.gif"
-    width="360" height="360" rel:auto_play="1" rel:rubbable="1" />
+
+
     <!-- Home Page -->
     <div id="Home">
       <img src="./pics/標題.png" alt="Title">
@@ -66,6 +70,7 @@
 
     <!-- Three Stories -->
     <div id="Stories">
+
       <!-- Top Pics -->
       <div id="ScrollFixed">
         <a href="#Interview"><img src="./pics/小圖-13.png" alt="Interview" width="200"></a>
@@ -73,9 +78,85 @@
         <a href="#Violence"><img src="./pics/小圈-家庭暴力-14.png" alt="Violence" width="200"></a>
       </div>
 
+      <!-- Swiper -->
+         <div class="swiper-container swiper-container-h">
+             <div class="swiper-wrapper">
+                 <div class="swiper-slide" style="height: 1740px;">
+                   <div class="swiper-container swiper-container-v">
+                     <!-- Interview Story -->
+                       <div class="swiper-wrapper" id="Interview">
+                           <div class="swiper-slide" class="StoryIntro">
+                             <img src="" alt="InterviewTitle" class="StoryTitle" >
+                             <img src="./pics/境外面談 主圖.png" alt="InterviewPic" class="StoryPic" id="ScrollFixedOn">
+                             <p class="IntroWord">Interview Story Intro</p>
+                           </div>
+                           <div class="swiper-slide" class="LawBad">
+                             <img src="" alt="InterviewLawBadTitle" class="LawBadTitle">
+                             <img src="" alt="InterviewLawBadPic" class="LawBadPic">
+                             <p class="LawBadWord">Interview Law Bad</p>
+                           </div>
+                           <div class="swiper-slide" class="LawGood">
+                             <img src="" alt="BehaviorLawGoodTitle" class="LawGoodTitle">
+                             <img src="" alt="BehaviorLawGoodPic" class="LawGoodPic">
+                             <p class="LawGoodWord">Behavior Law Good</p>
+                           </div>
+                       </div>
+                       <div class="swiper-pagination swiper-pagination-v"></div>
+                   </div>
+                 </div>
+                 <div class="swiper-slide" style="height: 1740px;">
+                     <div class="swiper-container swiper-container-v">
+                       <!-- Bad Behavior Story -->
+                       <div class="swiper-wrapper" id="Behavior">
+                           <div class="swiper-slide" class="StoryIntro">
+                             <img src="" alt="BehaviorTitle" class="StoryTitle">
+                             <img src="./pics/素行不良主圖.png" alt="BehaviorPic" class="StoryPic">
+                             <p class="IntroWord">Behavior Story Intro</p>
+                           </div>
+                           <div class="swiper-slide" class="LawBad">
+                             <img src="" alt="BehaviorLawBadTitle" class="LawBadTitle">
+                             <img src="" alt="BehaviorLawBadPic" class="LawBadPic">
+                             <p class="LawBadWord">Behavior Law Bad</p>
+                           </div>
+                           <div class="swiper-slide" class="LawGood">
+                             <img src="" alt="BehaviorLawGoodTitle" class="LawGoodTitle">
+                             <img src="" alt="BehaviorLawGoodPic" class="LawGoodPic">
+                             <p class="LawGoodWord">Behavior Law Good</p>
+                           </div>
+                       </div>
+                         <div class="swiper-pagination swiper-pagination-v"></div>
+                     </div>
+                 </div>
+                 <div class="swiper-slide" style="height: 1740px;">
+                   <div class="swiper-container swiper-container-v">
+                     <!--Violience Story-->
+                     <div class="swiper-wrapper" id="Violence">
+                         <div class="swiper-slide" class="StoryIntro">
+                           <img src="" alt="ViolenceTitle" class="StoryTitle">
+                           <img src="./pics/家庭暴力主圖.png" alt="ViolencePic" class="StoryPic">
+                           <p class="IntroWord">Violence Story Intro</p>
+                         </div>
+                         <div class="swiper-slide" class="LawBad">
+                           <img src="" alt="ViolenceLawBadTitle" class="LawBadTitle">
+                           <img src="" alt="ViolenceLawBadPic" class="LawBadPic">
+                           <p class="LawBadWord">Violence Law Bad</p>
+                         </div>
+                         <div class="swiper-slide" class="LawGood">
+                           <img src="" alt="ViolenceLawGoodTitle" class="LawGoodTitle">
+                           <img src="" alt="ViolenceLawGoodPic" class="LawGoodPic">
+                           <p class="LawGoodWord">Violence Law Good</p>
+                         </div>
+                     </div>
+                       <div class="swiper-pagination swiper-pagination-v"></div>
+                   </div>
+                 </div>
+             </div>
+             <!-- Add Pagination -->
+             <div class="swiper-pagination swiper-pagination-h"></div>
+         </div>
 
 
-      <!-- Interview Story -->
+      <!-- Interview Story >
       <div id="Interview">
 
         <div class="StoryIntro">
@@ -93,9 +174,10 @@
           <img src="" alt="InterviewLawGoodPic" class="LawGoodPic">
           <p class="LawGoodWord">Interview Law Good</p>
         </div>
-      </div>
+      </div-->
 
-      <!-- Bad Behavior Story -->
+
+      <!-- Bad Behavior Story >
       <div id="Behavior">
         <div class="StoryIntro">
           <img src="" alt="BehaviorTitle" class="StoryTitle">
@@ -112,9 +194,10 @@
           <img src="" alt="BehaviorLawGoodPic" class="LawGoodPic">
           <p class="LawGoodWord">Behavior Law Good</p>
         </div>
-      </div>
+      </div-->
 
-      <!--Violience Story-->
+
+      <!--Violience Story>
       <div id="Violence">
         <div class="StoryIntro">
           <img src="" alt="ViolenceTitle" class="StoryTitle">
@@ -131,7 +214,11 @@
           <img src="" alt="ViolenceLawGoodPic" class="LawGoodPic">
           <p class="LawGoodWord">Violence Law Good</p>
         </div>
-      </div>
+      </div-->
+
+
+
+
     </div>
     <!-- Stories End -->
 
@@ -188,33 +275,48 @@
     </footer>
 
   </div>
+  <script src="./Swiper/dist/js/swiper.min.js"></script>
   <script>
+    var swiperH = new Swiper('.swiper-container-h', {
+        pagination: '.swiper-pagination-h',
+        paginationClickable: true,
+        spaceBetween: 50
+    });
+    var swiperV = new Swiper('.swiper-container-v', {
+        pagination: '.swiper-pagination-v',
+        paginationClickable: true,
+        direction: 'vertical',
+        spaceBetween: 50
+    });
+    </script>
+  <script>
+
+
+
     // init controller
     var controller = new ScrollMagic.Controller();
 
     // build scene
-    var scene = new ScrollMagic.Scene({triggerElement: "#ScrollFixedOn"})
+    var scene = new ScrollMagic.Scene({triggerElement: "#Stories"})
     // trigger a velocity opaticy animation
       .setVelocity("#ScrollFixed", {opacity: 1}, {duration: 400})
       .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
+
     var scene = new ScrollMagic.Scene({triggerElement: "#Footer"})
     // trigger a velocity opaticy animation
       .setVelocity("#ScrollFixed", {opacity: 0}, {duration: 400})
       .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
-    </script>
 
-
-<script type="text/javascript">
-    $$('img').each(function (img_tag) {
-        if (/.*\.gif/.test(img_tag.src)) {
-            var rub = new SuperGif({ gif: img_tag } );
-            rub.load(function(){
-                console.log('oh hey, now the gif is loaded');
-            });
-        }
-    });
+      $$('img').each(function (img_tag) {
+            if (/.*\.gif/.test(img_tag.src)) {
+                var rub = new SuperGif({ gif: img_tag} );
+                rub.load(function(){
+                    console.log('oh hey, now the gif is loaded');
+                });
+            }
+        });
 </script>
 </body>
 
