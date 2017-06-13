@@ -278,13 +278,14 @@
     </footer>
 
   </div>
+
   <script src='./zingtouch/dist/zingtouch.min.js'></script>
   <script>
     var containerElement = document.getElementById('container');
     var activeRegion = ZingTouch.Region(containerElement);
     activeRegion.bind(containerElement, 'tap', function(event){
 	    //Perform Operations
-      document.documentElement.scrollTop= 1740;
+       window.scrollBy(0,1740)
 
     });
   </script>
