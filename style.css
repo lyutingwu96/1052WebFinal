@@ -20,7 +20,6 @@ body{
 	padding: 0;
 	margin: 0 auto;
 	width: 100%;
-	border:solid 1px;
 	text-align: center;
 	align-items: center;
 
@@ -39,6 +38,7 @@ body{
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -62,23 +62,24 @@ body{
 	width: 100%;
 }
 #Home img[alt="Title"]{
-	margin: 250px 0 23px 0;
+	margin: 200px 0 23px 0;
 	/*margin: 200px 0 23px 0;*/
 	padding: 0 100px 0 100px;
 }
 #Home img[alt="Subtitle"]{
 	margin: 0 0 12px 0;
-	padding: 0 100px 0 100px;
+	padding: 0 80px 0 80px;
 }
 #Home img[alt="Banner"]{
-	margin: 0 0 132px 0;
+	margin: 0 0 70px 0;
 	padding: 0 30px 0 30px;
 }
 #Home p{
-	margin: 0 230px 130px 230px;
+	margin: 0 120px 50px 120px;
 	/*margin: 0 230px 189.45px 230px;*/
 	font-size: 35px;
 	font-family: STHeit;
+	text-align: left;
 }
 
 #Stories{
@@ -92,7 +93,7 @@ body{
 	background: rgba(0,0,0,0.1);
 	position: fixed;
 	top: 113.5px;
-	padding: 20px 0 20px 0;
+	padding: 10px 0 10px 0;
 }
 #ScrollFixed img{
 	width: 20%;
@@ -100,16 +101,22 @@ body{
 }
 
 
-.StoryIntro .StoryTitle{
-	margin: 355px 0 0;
+.StoryTitle{
+	margin: 355px 0 0 0;
 	width: 60%;
 }
-.StoryIntro .StoryPic{
+
+.StoryPic{
 	width: 70%;
 	padding: 0 20px 0 20px;
 	margin: 40px 0 96px 0;
 }
-.StoryIntro .IntroWord{
+img[alt="BehaviorPic"]{
+	padding: 0;
+	margin: 0 0 50px 0;
+
+}
+.IntroWord{
 	padding: 0 100px 0 100px;
 	margin: 0 0 90px 0;
 	font-size: 35px;
@@ -118,78 +125,165 @@ body{
 }
 
 .LawBadTitle, .LawGoodTitle{
-	margin: 250px 0 0 0;
+	margin: 300px 0 20px 0;
 	width: 60%;
 }
-.LawBad .LawBadPic, .LawGood .LawGoodPic{
+img[alt="BehaviorLawGoodTitle"]{
+	margin: 250px 0 50px 0;
+}
+img[alt="BehaviorLawBadTitle"]{
+	margin: 250px 0 50px 0;
+	width: 70%;
+}
+img[alt="ViolenceLawBadTitle"]{
+	margin: 200px 0 0 0;
+}
+img[alt="ViolenceLawGoodTitle"]{
+	margin: 150px 0 0 0;
+}
+.LawBadPic, .LawGoodPic{
+	width: 90%;
+	padding: 0 120px 0 120px;
+	margin: 50px 0 40px 0;
+}
+img[alt="ViolenceLawBadPic"]{
 	width: 100%;
-	padding: 0 100px 0 100px;
-	margin: 40px 0 96px 0;
+	padding: 0 50px 0 50px;
+}
+img[alt="ViolenceLawBadPic2"]{
+	width: 80%;
+	height: 40%;
+	padding: 0 30px 0 50px;
+}
+img[alt="BehaviorLawGoodPic"]{
+	margin: 100px 0 80px 0;
+}
+
+.smallArea{
+	margin: 100px 0 0 0;
+}
+.lawBadSmallArea{
+	display: inline-block;
+	width: 400px;
+	height: 450px;
+}
+.smallAreaText{
+	font-family: STHeit;
+	font-size: 30px;
 }
 .LawBadPicSmall, .LawGoodPicSmall{
-	display: inline-block;
-	width: 40%;
-	padding: 0 20px 0 20px;
-	margin: 40px 0 96px 0;
+	width: 100%;
+}
+img[alt="ViolenceLawGoodPic1"]{
+	width: 90%;
+}
+img[alt="ViolenceLawGoodPic2"]{
+	width: 110%;
+}
+#violenceSmallArea{
+	margin: 50px 0 0 0; 
+}
+#violenceArea{
+	margin: 0;
 }
 .lawSubTitle{
-	padding: 0 100px 0 100px;
+	padding: 10px 50px 0 50px;
 	font-size: 40px;
 	font-family: STHeit;
 	font-weight: 2em;
 	text-align: left;
-
 }
-.LawBad .LawBadWord, .LawGood .LawGoodWord{
+#interviewSubtitle{
+	margin: 0;
+}
+.LawBadWord, .LawGoodWord{
 	padding: 0 100px 0 100px;
-	margin: 0 0 100px 0;
+	margin: 0 0 50px 0;
 	font-size: 35px;
-	font-family: STHeit;	text-align: left;
-
+	font-family: STHeit;	
+	text-align: left;
+}
+#lawbadWordEdit{
+	margin: 30px 0 0 0;
 }
 
 footer{
+	padding: 20px 0 0 0;
 	font-size: 35px;
 	font-family: STHeit;
 }
 .FooterTitle{
+	margin: 100px 0 50px 0;
 	width: 100%;
 }
 .FooterTitle img[alt="OrgsTitlePic"]{
 	width: 30%;
-	padding: 60px 0 20px 0;
+	padding: 30px 0 20px 0;
 }
+
 
 #Orgs .Org{
-	display: inline-block;
-	width: 200px;
-	height: 300px;
-	margin: 30px 40px 60px 30px;
+	display: flex;
+	margin: 0 150px 80px 50px;
 }
-#Orgs .OrgPic{
-	width: 100%;
-	margin-bottom: 30px;
+.OrgIntro{
+	display: inline-block;
+	text-align: left;
+	margin: 0;
+	width: 400px;
+}
+.OrgIntro a{
+	line-height: 2em;
+}
+.OrgImage{
+	display: inline-block;
+	text-align: center;
+	padding: 0 0 0 20px;
+	width: 400px;
+	height: 300px;
+}
+.OrgImage img{
+	width: 60%;
 }
 
+#Mores{
+	margin: 400px 0 0 0;
+	padding: 0 70px 0 70px;
+}
 #Mores img[alt="MoresTitlePic"]{
-	margin: 30px 0 30px 0;
-	width: 40%;
+	margin: 0px 0 30px 0;
+	width: 60%;
 }
 
-#Mores .More{
-	display: inline-block;
-	width: 200px;
-	height: 300px;
-	margin: 0 20px 0 40px;
+#Mores .MoreUp{
+
 }
-#Mores .MorePic{
-	width: 100%;
-	margin-bottom: 30px;
+.MoreUp .MorePic{
+	width: 25%;
+	margin: 0 0 30px 0;
+}
+
+#Mores .MoreDown{
+	display: inline-block;
+	vertical-align: top;
+	width: 310px;
+	height: 300px;
+	margin: 30px 50px 150px 50px;
+}
+
+#down1 img{
+	width: 75%;
+}
+
+.MoreDown .MorePic{
+	width: 70%;
+	margin: 0 0 30px 0;
 }
 
 
 #Info{
-	margin:150px 0 20px 0;
+	font-size: 30px;
+	margin:150px 0 50px 0;
 	text-align: center;
 	align-items: center;
 }
