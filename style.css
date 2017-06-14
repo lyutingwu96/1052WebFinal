@@ -119,11 +119,7 @@ body{
 	padding: 0 20px 0 20px;
 	margin: 40px 0 96px 0;
 }
-img[alt="BehaviorPic"]{
-	padding: 0;
-	margin: 0 0 50px 0;
 
-}
 .IntroWord{
 	padding: 0 100px 0 100px;
 	margin: 0 0 90px 0;
@@ -131,10 +127,44 @@ img[alt="BehaviorPic"]{
 	font-family: STHeit;
 	text-align: left;
 }
-
 .LawBadTitle, .LawGoodTitle{
 	margin: 300px 0 20px 0;
 	width: 60%;
+}
+
+.LawBadPic, .LawGoodPic{
+	width: 90%;
+	padding: 0 120px 0 120px;
+	margin: 50px 0 40px 0;
+}
+.smallArea{
+	margin: 100px 0 0 0;
+}
+.smallAreaText{
+	font-family: STHeit;
+	font-size: 30px;
+}
+.LawBadPicSmall, .LawGoodPicSmall{
+	width: 100%;
+}
+.lawSubTitle{
+	padding: 10px 50px 0 50px;
+	font-size: 40px;
+	font-family: STHeit;
+	font-weight: 2em;
+	text-align: left;
+}
+.LawBadWord, .LawGoodWord{
+	padding: 0 100px 0 100px;
+	margin: 0 0 50px 0;
+	font-size: 35px;
+	font-family: STHeit;
+	text-align: left;
+}
+
+img[alt="BehaviorPic"]{
+	padding: 0;
+	margin: 0 0 50px 0;
 }
 img[alt="BehaviorLawGoodTitle"]{
 	margin: 250px 0 50px 0;
@@ -143,17 +173,17 @@ img[alt="BehaviorLawBadTitle"]{
 	margin: 250px 0 50px 0;
 	width: 70%;
 }
+img[alt="BehaviorLawGoodPic"]{
+	margin: 100px 0 80px 0;
+}
+
 img[alt="ViolenceLawBadTitle"]{
 	margin: 200px 0 0 0;
 }
 img[alt="ViolenceLawGoodTitle"]{
 	margin: 150px 0 0 0;
 }
-.LawBadPic, .LawGoodPic{
-	width: 90%;
-	padding: 0 120px 0 120px;
-	margin: 50px 0 40px 0;
-}
+
 img[alt="ViolenceLawBadPic"]{
 	width: 100%;
 	padding: 0 50px 0 50px;
@@ -163,30 +193,17 @@ img[alt="ViolenceLawBadPic2"]{
 	height: 40%;
 	padding: 0 30px 0 50px;
 }
-img[alt="BehaviorLawGoodPic"]{
-	margin: 100px 0 80px 0;
-}
-
-.smallArea{
-	margin: 100px 0 0 0;
-}
-.lawBadSmallArea{
-	display: inline-block;
-	width: 400px;
-	height: 450px;
-}
-.smallAreaText{
-	font-family: STHeit;
-	font-size: 30px;
-}
-.LawBadPicSmall, .LawGoodPicSmall{
-	width: 100%;
-}
 img[alt="ViolenceLawGoodPic1"]{
 	width: 90%;
 }
 img[alt="ViolenceLawGoodPic2"]{
 	width: 110%;
+}
+
+.lawBadSmallArea{
+	display: inline-block;
+	width: 400px;
+	height: 450px;
 }
 #violenceSmallArea{
 	margin: 50px 0 0 0;
@@ -194,23 +211,11 @@ img[alt="ViolenceLawGoodPic2"]{
 #violenceArea{
 	margin: 0;
 }
-.lawSubTitle{
-	padding: 10px 50px 0 50px;
-	font-size: 40px;
-	font-family: STHeit;
-	font-weight: 2em;
-	text-align: left;
-}
+
 #interviewSubtitle{
 	margin: 0;
 }
-.LawBadWord, .LawGoodWord{
-	padding: 0 100px 0 100px;
-	margin: 0 0 50px 0;
-	font-size: 35px;
-	font-family: STHeit;
-	text-align: left;
-}
+
 #lawbadWordEdit{
 	margin: 30px 0 0 0;
 }
@@ -262,12 +267,12 @@ footer{
 	margin: 0px 0 30px 0;
 	width: 60%;
 }
-
-#Mores .MoreUp{
-
-}
 .MoreUp .MorePic{
 	width: 25%;
+	margin: 0 0 30px 0;
+}
+.MoreDown .MorePic{
+	width: 70%;
 	margin: 0 0 30px 0;
 }
 
@@ -282,12 +287,6 @@ footer{
 #down1 img{
 	width: 75%;
 }
-
-.MoreDown .MorePic{
-	width: 70%;
-	margin: 0 0 30px 0;
-}
-
 
 #Info{
 	font-size: 30px;
