@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" type="text/css" href="style">
-  <link rel="stylesheet" href="./Swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="./Swiper/dist/css/swiper.css">
   <meta charset="utf-8">
 
   <title>家落何處—新住民配偶婚姻路遙遙</title>
@@ -247,6 +247,9 @@
              </div>
              <!-- Add Pagination -->
              <div class="swiper-pagination swiper-pagination-h"></div>
+             <!-- Add Arrows -->
+             <div class="swiper-button-next swiper-button-black"></div>
+             <div class="swiper-button-prev swiper-button-black"></div>
          </div>
 
 
@@ -339,13 +342,17 @@
     var swiperH = new Swiper('.swiper-container-h', {
         pagination: '.swiper-pagination-h',
         paginationClickable: true,
-        spaceBetween: 50
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 50,
+        loop: true
     });
     var swiperV = new Swiper('.swiper-container-v', {
         pagination: '.swiper-pagination-v',
         paginationClickable: true,
         direction: 'vertical',
-        spaceBetween: 50
+        spaceBetween: 50,
+        loop:true
     });
     </script>
   <script>

@@ -54,6 +54,14 @@ body{
         height: 100%;
     }
 
+.swiper-button-next.swiper-button-next-v{
+
+  margin-top: 10px;
+}
+.swiper-button-prev-v{
+
+}
+
 #Home{
 	margin: 0;
 	padding: 0;
@@ -181,7 +189,7 @@ img[alt="ViolenceLawGoodPic2"]{
 	width: 110%;
 }
 #violenceSmallArea{
-	margin: 50px 0 0 0; 
+	margin: 50px 0 0 0;
 }
 #violenceArea{
 	margin: 0;
@@ -200,7 +208,7 @@ img[alt="ViolenceLawGoodPic2"]{
 	padding: 0 100px 0 100px;
 	margin: 0 0 50px 0;
 	font-size: 35px;
-	font-family: STHeit;	
+	font-family: STHeit;
 	text-align: left;
 }
 #lawbadWordEdit{
