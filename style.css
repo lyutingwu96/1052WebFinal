@@ -96,7 +96,7 @@ body{
 }
 
 #ScrollFixed{
-  	opacity: 0;
+  opacity: 0;
 	width: 100%;
 	background: rgba(0,0,0,0.1);
 	position: fixed;
@@ -104,9 +104,11 @@ body{
 	padding: 10px 0 10px 0;
 }
 #ScrollFixed img{
+  opacity: 1;
 	width: 20%;
 	margin: 0 20px 0 25px;
 }
+
 
 
 .StoryTitle{
@@ -220,7 +222,7 @@ img[alt="ViolenceLawGoodPic2"]{
 	margin: 30px 0 0 0;
 }
 
-footer{
+.Footer{
 	padding: 20px 0 0 0;
 	font-size: 35px;
 	font-family: STHeit;
@@ -260,7 +262,7 @@ footer{
 }
 
 #Mores{
-	margin: 400px 0 0 0;
+	margin: 95px 0 0 0;
 	padding: 0 70px 0 70px;
 }
 #Mores img[alt="MoresTitlePic"]{

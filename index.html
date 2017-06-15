@@ -26,6 +26,15 @@
 	<!--script type="text/javascript" src="./JSSM/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script-->
   <script type="text/javascript" src="./libgif/libgif.js"></script>
 
+  <style type="text/css">
+  #ScrollFixed {
+    transition: transform 0.3s ease-out;
+  }
+  .zap {
+    transform: scale(2.5, 0);
+  }
+  </style>
+
 </head>
 
 <body>
@@ -258,7 +267,7 @@
     <!-- Stories End -->
 
     <!-- Footer -->
-    <footer id="Footer">
+    <footer class="Footer">
       <!-- Orgnizations -->
       <div id="Orgs">
         <div class="FooterTitle">
@@ -272,7 +281,7 @@
           </div>
         </div>
         <div class="Org">
-          <div class="OrgImage"><img src="./pics/more/1095.png" alt="Org 2 Pic" class="OrgPic"></div>
+          <div class="OrgImage" id="ScrollFixedClose"><img src="./pics/more/1095.png" alt="Org 2 Pic" class="OrgPic"></div>
           <div class="OrgIntro">
             <a href="https://www.facebook.com/MigrationTaichung/">「1095」</a>
             <p>致力搭建台灣人與外籍人士溝通的平台，鼓勵不同族裔人士合作教育課程、工作坊與社會參與式行動，藉此改善外籍人士在台的社會待遇與勞動環境。</p>
@@ -356,25 +365,34 @@
     });
     </script>
   <script>
-  $(document).ready(function() {
-    $(".img").click(function(event){
-      $('html, body').animate({scrollTop: '+=1080px'}, 800);
+  function setNavigation() {
+    var path = window.location.pathname;
+    path = path.replace(/\/$/, "");
+    path = decodeURIComponent(path);
+
+    $("#ScrollFixed a").each(function () {
+      var href = $(this).attr('href');
+      if (path.substring(0, href.length) === href) {
+        $(this).closest('img').addClass('active');
+      }
     });
-  });
+  }
 
 
     // init controller
     var controller = new ScrollMagic.Controller();
 
     // build scene
-    var scene = new ScrollMagic.Scene({triggerElement: "#Stories"})
+    var scene = new ScrollMagic.Scene({triggerElement: "#ScrollFixedOn"})
     // trigger a velocity opaticy animation
       .setVelocity("#ScrollFixed", {opacity: 1}, {duration: 400})
       .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
 
-    var scene = new ScrollMagic.Scene({triggerElement: "#Footer"})
+    var scene = new ScrollMagic.Scene({triggerElement: "#ScrollFixedClose"})
     // trigger a velocity opaticy animation
+      //.setClassToggle("#ScrollFixed", "zap")
+			//.addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
       .setVelocity("#ScrollFixed", {opacity: 0}, {duration: 400})
       .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
