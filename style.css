@@ -165,10 +165,6 @@ body{
 	text-align: left;
 }
 
-img[alt="BehaviorPic"]{
-	width: 100%;
-	padding: 50px 100px 50px 100px;
-}
 img[alt="BehaviorLawGoodTitle"]{
 	margin: 0 0 40px 0;
 }
