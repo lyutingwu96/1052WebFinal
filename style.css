@@ -95,13 +95,9 @@ body{
 	padding: 0;
 }
 
-<<<<<<< HEAD
+
 /*#ScrollFixed{
   	opacity: 0;
-=======
-#ScrollFixed{
-  opacity: 0;
->>>>>>> 0a4141bd219d200cd82fcc30802fc1213b983bb6
 	width: 100%;
 	background: rgba(0,0,0,0.1);
 	position: fixed;
