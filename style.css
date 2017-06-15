@@ -166,10 +166,8 @@ body{
 }
 
 img[alt="BehaviorPic"]{
-	padding: 50px 0 0 0;
-	width: 512px;
-	height: 512px;
-	margin: 0 0 50px 0;
+	width: 100%;
+	padding: 50px 100px 50px 100px;
 }
 img[alt="BehaviorLawGoodTitle"]{
 	margin: 0 0 40px 0;
