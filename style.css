@@ -72,15 +72,15 @@ body{
 #Home img[alt="Title"]{
 	margin: 100px 0 0 0;
 	/*margin: 200px 0 23px 0;*/
-	padding: 0 100px 0 100px;
+	padding: 0 80px 0 80px;
 }
 #Home img[alt="Subtitle"]{
 	margin: 0 0 0 0;
-	padding: 0 80px 0 80px;
+	padding: 0 50px 0 50px;
 }
 #Home img[alt="Banner"]{
 	margin: 0 0 50px 0;
-	padding: 0 30px 0 30px;
+	padding: 0;
 }
 #Home p{
 	margin: 0 120px 50px 120px;
@@ -167,25 +167,25 @@ body{
 
 img[alt="BehaviorPic"]{
 	padding: 50px 0 0 0;
-	width: 70%;
+	width: 80%;
 	margin: 0 0 50px 0;
 }
 img[alt="BehaviorLawGoodTitle"]{
-	margin: 100px 0 50px 0;
+	margin: 0 0 40px 0;
 }
 img[alt="BehaviorLawBadTitle"]{
-	margin: 100px 0 50px 0;
+	margin: 50px 0 50px 0;
 	width: 70%;
 }
 img[alt="BehaviorLawGoodPic"]{
-	margin: 100px 0 80px 0;
+	margin: 100px 0 30px 0;
 }
 
 img[alt="ViolenceLawBadTitle"]{
-	margin: 200px 0 0 0;
+	margin: 150px 0 0 0;
 }
 img[alt="ViolenceLawGoodTitle"]{
-	margin: 150px 0 0 0;
+	margin: 100px 0 0 0;
 }
 
 img[alt="ViolenceLawBadPic"]{
