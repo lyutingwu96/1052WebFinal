@@ -67,7 +67,7 @@ body{
 	padding: 0;
 }
 #Home img[alt="Title"], img[alt="Subtitle"],img[alt="Banner"]{
-	width: 100%;
+	width: 90%;
 }
 #Home img[alt="Title"]{
 	margin: 100px 0 0 0;
@@ -167,14 +167,14 @@ body{
 
 img[alt="BehaviorPic"]{
 	padding: 50px 0 0 0;
-	width: 
+	width: 70%;
 	margin: 0 0 50px 0;
 }
 img[alt="BehaviorLawGoodTitle"]{
-	margin: 150px 0 50px 0;
+	margin: 100px 0 50px 0;
 }
 img[alt="BehaviorLawBadTitle"]{
-	margin: 150px 0 50px 0;
+	margin: 100px 0 50px 0;
 	width: 70%;
 }
 img[alt="BehaviorLawGoodPic"]{
