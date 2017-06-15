@@ -120,7 +120,7 @@ body{
 .StoryPic{
 	width: 70%;
 	padding: 0 20px 0 20px;
-	margin: 40px 0 96px 0;
+	margin: 40px 0 40px 0;
 }
 
 .IntroWord{
@@ -155,14 +155,14 @@ body{
 	font-size: 40px;
 	font-family: STHeit;
 	font-weight: 2em;
-	text-align: left;
+	text-align: auto;
 }
 .LawBadWord, .LawGoodWord{
 	padding: 0 100px 0 100px;
 	margin: 0 0 50px 0;
 	font-size: 35px;
 	font-family: STHeit;
-	text-align: left;
+	text-align: auto;
 }
 
 img[alt="BehaviorPic"]{
