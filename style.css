@@ -70,7 +70,7 @@ body{
 	width: 90%;
 }
 #Home img[alt="Title"]{
-	margin: 100px 0 0 0;
+	margin: 130px 0 0 0;
 	/*margin: 200px 0 23px 0;*/
 	padding: 0 80px 0 80px;
 }
@@ -151,7 +151,7 @@ body{
 	width: 100%;
 }
 .lawSubTitle{
-	padding: 10px 50px 0 50px;
+	padding: 10px 100px 0 100px;
 	font-size: 40px;
 	font-family: STHeit;
 	font-weight: 2em;
@@ -162,7 +162,7 @@ body{
 	margin: 0 0 50px 0;
 	font-size: 35px;
 	font-family: STHeit;
-	text-align: auto;
+	text-align: left;
 }
 
 img[alt="BehaviorPic"]{
@@ -178,11 +178,11 @@ img[alt="BehaviorLawBadTitle"]{
 	width: 70%;
 }
 img[alt="BehaviorLawGoodPic"]{
-	margin: 100px 0 30px 0;
+	margin: 100px 0 50px 0;
 }
 
 img[alt="ViolenceLawBadTitle"]{
-	margin: 150px 0 0 0;
+	margin: 10px 0 0 0;
 }
 img[alt="ViolenceLawGoodTitle"]{
 	margin: 100px 0 0 0;
@@ -230,18 +230,17 @@ img[alt="ViolenceLawGoodPic2"]{
 	font-family: STHeit;
 }
 .FooterTitle{
-	margin: 100px 0 35px 0;
+	margin: 60px 0 35px 0;
 	width: 100%;
 }
 .FooterTitle img[alt="OrgsTitlePic"]{
 	width: 30%;
-	padding: 20px 0 20px 0;
+	padding: 50px 0 10px 0;
 }
-
 
 #Orgs .Org{
 	display: flex;
-	margin: 0 0 80px 0;
+	margin: 0 0 50px 0;
 }
 .OrgIntro{
 	display: inline-block;
